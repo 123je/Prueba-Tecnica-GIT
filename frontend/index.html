@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Notas</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Gestión de Notas</h1>
+    
+    <form id="notaForm">
+        <input type="hidden" id="notaId">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <textarea id="descripcion" placeholder="Descripción"></textarea>
+        <input type="date" id="fechaVencimiento">
+        <label><input type="checkbox" id="completada"> Completada</label>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <h2>Lista de Notas</h2>
+    <ul id="listaNotas"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

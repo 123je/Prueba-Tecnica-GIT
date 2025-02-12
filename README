@@ -1,0 +1,38 @@
+
+
+Base de Datos SQL Server
+Ejecutar esto en SQL Server Management Studio:
+
+
+CREATE TABLE Notas (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    titulo NVARCHAR(255) NOT NULL,
+    descripcion NVARCHAR(MAX),
+    fechaVencimiento DATE,
+    completada BIT DEFAULT 0
+);
+
+
+Ejecutar esto en la terminal dentro de la carpeta backend:
+
+sh
+Copiar
+Editar
+npm init -y
+npm install express mssql cors
+Para correr el backend:
+
+
+
+carpeta backend
+
+npm init -y
+npm install express mssql cors
+
+
+ Inicia el backend:
+
+
+cd backend
+node server.js
+Abrir el archivo frontend/index.html en tu navegador.
